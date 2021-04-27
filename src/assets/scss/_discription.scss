@@ -1,0 +1,92 @@
+.discription {
+  padding: 100px 0;
+
+  .container {
+    @include df;
+    flex-wrap: wrap;
+    max-width: 920px;
+    align-items: flex-start;
+    padding: 0 15px;
+  }
+
+  &__text-seo {
+    position: relative;
+    height: 240px;
+    overflow: hidden;
+    font-size: 16px;
+    line-height: 150%;
+    color: $accent-color;
+    margin-bottom: 50px;
+
+    p {
+      max-width: 540px;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 240px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(180deg, rgba(249, 249, 249, 0) 0, $bgc-color 82.29%);
+    }
+  }
+
+  .full-text {
+    height: auto;
+    overflow: auto;
+
+    p {
+      padding-bottom: 50px;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+
+  &__btn {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: $accent-color;
+    outline: none;
+    z-index: 6;
+    border-bottom: 1px dashed #333;
+  }
+
+  &__icon-list {
+    @include df;
+    flex-wrap: wrap;
+    max-width: 277px;
+  }
+
+  &__icon-item {
+    width: 130px;
+    text-align: center;
+    margin-bottom: 30px;
+
+    p {
+      margin-top: 15px;
+      font-size: 16px;
+      line-height: 150%;
+    }
+  }
+
+}
+
+@media (max-width: 992px) {
+  .discription {
+    padding: 50px 0;
+
+    .container {
+      justify-content: space-around;
+    }
+  }
+}

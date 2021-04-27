@@ -1,0 +1,100 @@
+.subscribe {
+    color: #fff;
+    padding-bottom: 100px;
+    background: #000 url('../img/Rectangle9.jpg');
+
+    &__title {
+        text-align: center;
+        padding: 100px 0 50px;
+
+        h2 {
+            font-size: 21px;
+            line-height: 140%;
+        }
+
+        h3 {
+            font-family: NotoSerif, sans-serif;
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 41px;
+        }
+    }
+
+    &__body {
+        @include df;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    &__list {
+        list-style: none;
+
+        li {
+            font-size: 18px;
+            margin: 0 0 15px 30px;
+            position: relative;
+
+            &::before {
+                content: '';
+                background: url('../img/subscribe__icon.svg') no-repeat top left/cover;
+                position: absolute;
+                height: 20px;
+                width: 20px;
+                left: -35px;
+            }
+        }
+    }
+
+    &__form {
+        @include df;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        background: $white-color;
+        padding: 20px;
+        margin: 30px;
+        max-width: 420px;
+        flex-wrap: wrap;
+        box-shadow: 0 0 0 15px #000, 0 0 0 16px #fff;
+    }
+
+    &__form-email {
+        @include Font_Gilroy;
+        padding: 13px;
+        border: 1px solid $grey-color;
+        margin: 0 15px 0 0;
+        outline: none;
+
+        &::placeholder {
+            color: $grey-color;
+            text-transform: uppercase;
+        }
+    }
+
+    &__form-btn {
+        border: none;
+        padding: 14px 35px;
+        font-size: 14px;
+        color: #fff;
+        background: $accent-color;
+        text-transform: uppercase;
+        outline: none;
+    }
+}
+
+@media (max-width: 992px) {
+    .subscribe {
+        padding-bottom: 30px;
+
+        &__title {
+            padding: 30px 0 20px;
+        }
+    }
+}
+
+@media (max-width: 475px) {
+    .subscribe {
+        &__form-email {
+            margin-bottom: 15px;
+        }
+    }
+}

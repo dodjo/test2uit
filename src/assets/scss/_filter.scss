@@ -1,0 +1,24 @@
+.filter {
+  margin-top: 211px;
+
+  &__wrap {
+    width: 100%;
+    @include df;
+    flex-wrap: wrap;
+  }
+}
+
+
+@media (max-width: 992px) {
+  .filter {
+    margin-top: 130px;
+  }
+}
+
+@media (max-width: 576px) {
+  .filter {
+    .selection-box {
+      width: 100%;
+    }
+  }
+}
