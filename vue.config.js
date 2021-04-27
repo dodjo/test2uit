@@ -1,5 +1,5 @@
 module.exports = {
     publicPath: process.env.NODE_ENV === 'production'
-      ? '/test2uit/'
+      ? '/test2uit-dist/'
       : '/'
   }

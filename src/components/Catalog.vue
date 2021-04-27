@@ -71,38 +71,68 @@
             /
             <a href="#">Регистрация</a>
           </div>
-          <div class="burger-content__account-icons">
-            <a href="#">
-              <span
-                class="iconify"
-                data-inline="false"
-                data-icon="mdi:account"
-                style="color: #ffffff; font-size: 45px"
-              ></span>
-            </a>
-            <a href="#">
-              <span
-                class="iconify"
-                data-inline="false"
-                data-icon="topcoat:like"
-                style="color: #ffffff; font-size: 40px"
-              ></span>
-            </a>
+          <div class="burger-content__account-icons-wrap">
+            <div class="burger-content__account-icons">
+              <a href="#">
+                <span
+                  class="iconify"
+                  data-inline="false"
+                  data-icon="mdi:account"
+                  style="color: #ffffff; font-size: 45px"
+                ></span>
+              </a>
+              <a href="#">
+                <span
+                  class="iconify"
+                  data-inline="false"
+                  data-icon="topcoat:like"
+                  style="color: #ffffff; font-size: 40px"
+                ></span>
+              </a>
+            </div>
           </div>
         </div>
-
-        <div class="burger-content__search">
-          <span
-            class="iconify"
-            data-inline="false"
-            data-icon="gridicons:search"
-            style="color: #ffffff; font-size: 40px"
-          ></span>
-          <input
-            type="text"
-            class="burger-content__search-input"
-            placeholder="Поиск"
-          />
+        <div class="burger-content__social-icon">
+          <a href="#"
+            ><span
+              class="iconify"
+              data-inline="false"
+              data-icon="carbon:logo-youtube"
+              style="color: #ffffff; font-size: 39px"
+            ></span
+          ></a>
+          <a href="#"
+            ><span
+              class="iconify"
+              data-inline="false"
+              data-icon="entypo-social:vk"
+              style="color: #ffffff; font-size: 36px"
+            ></span
+          ></a>
+          <a href="#"
+            ><span
+              class="iconify"
+              data-inline="false"
+              data-icon="bx:bxl-facebook"
+              style="color: #ffffff; font-size: 39px"
+            ></span
+          ></a>
+          <a href="#"
+            ><span
+              class="iconify"
+              data-inline="false"
+              data-icon="bx:bxl-telegram"
+              style="color: #ffffff; font-size: 36px"
+            ></span
+          ></a>
+          <a href="#"
+            ><span
+              class="iconify"
+              data-inline="false"
+              data-icon="simple-icons:etsy"
+              style="color: #ffffff; font-size: 24px"
+            ></span
+          ></a>
         </div>
       </div>
     </header>
